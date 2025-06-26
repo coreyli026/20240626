@@ -390,17 +390,7 @@
 
         // Create floating hearts periodically
         setInterval(createFloatingHeart, 3000);
-
-        // Smooth scroll for better experience
-        document.addEventListener('wheel', (e) => {
-            if (Math.abs(e.deltaY) > 50) {
-                e.preventDefault();
-                window.scrollBy({
-                    top: e.deltaY > 0 ? window.innerHeight * 0.5 : -window.innerHeight * 0.5,
-                    behavior: 'smooth'
-                });
-            }
-        });
+        
     </script>
 </body>
 </html>
